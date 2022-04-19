@@ -178,6 +178,27 @@ section {
   }
 }
 
+.lang-button {
+  position: fixed;
+  top: 15%;
+  left: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+  background-color: var(--color-grey-2);
+  width: 70px;
+  height: 40px;
+  box-shadow: var(--box-shadow-1);
+  transition: var(--transition-1);
+  .version {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active-version {
+    background-color: var(--color-secondary);
+  }
+}
 // home
 .home-container {
   display: grid;

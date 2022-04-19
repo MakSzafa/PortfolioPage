@@ -225,6 +225,40 @@ section {
   color: var(--color-grey-0);
 }
 
+.lang-button {
+  position: fixed;
+  top: 15%;
+  left: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+  background-color: var(--color-grey-2);
+  width: 70px;
+  height: 40px;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
+  -webkit-transition: var(--transition-1);
+  transition: var(--transition-1);
+}
+
+.lang-button .version {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lang-button .active-version {
+  background-color: var(--color-secondary);
+}
+
 .home-container {
   display: -ms-grid;
   display: grid;
@@ -719,7 +753,7 @@ section {
   max-width: 200px;
 }
 
-@media screen and (max-height: 730px) {
+@media screen and (max-height: 770px) {
   .home-container .right-home .image {
     height: 80%;
     width: 60%;
@@ -883,6 +917,9 @@ section {
   .theme-button {
     width: 60px;
     height: 60px;
+  }
+  .lang-button {
+    width: 60px;
   }
   .section-title h1 {
     font-size: 2.5rem;
