@@ -49,6 +49,31 @@ p {
   color: var(--color-grey-1);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-grey-0);
+  border: thin solid var(--color-grey-0);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey-2);
+  border: thin solid var(--color-grey-2);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-grey-3);
+  border: thin solid var(--color-grey-3);
+  border-radius: 10px;
+}
+
 section {
   min-height: 100vh;
   width: 100%;
@@ -124,9 +149,9 @@ section {
 // buttons
 .nav-buttons {
   position: fixed;
-  z-index: 10;
   top: 30%;
   left: 2%;
+  z-index: 10;
   display: flex;
   flex-direction: column;
 
@@ -157,8 +182,9 @@ section {
 
 .theme-button {
   position: fixed;
-  top: 5%;
+  top: 3%;
   left: 2%;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +208,7 @@ section {
   position: fixed;
   top: 15%;
   left: 2%;
+  z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr;
   cursor: pointer;
@@ -199,6 +226,7 @@ section {
     background-color: var(--color-secondary);
   }
 }
+
 // home
 .home-container {
   display: grid;
