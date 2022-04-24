@@ -1,13 +1,13 @@
-@media screen and (max-height: 770px) {
-  .home-container {
-    .right-home {
-      .image {
-        height: 80%;
-        width: 60%;
-      }
-    }
-  }
-}
+// @media screen and (max-height: 770px) {
+//   .home-container {
+//     .right-home {
+//       .image {
+//         height: 80%;
+//         width: 60%;
+//       }
+//     }
+//   }
+// }
 
 @media screen and (min-width: 2000px) {
   body {
@@ -210,12 +210,14 @@
   section {
     padding-left: 7rem;
   }
-  .theme-button {
-    width: 60px;
-    height: 60px;
-  }
-  .lang-button {
-    width: 60px;
+  .nav-buttons {
+    .theme-button {
+      width: 60px;
+      height: 60px;
+    }
+    .lang-button {
+      width: 60px;
+    }
   }
   .section-title {
     h1 {
