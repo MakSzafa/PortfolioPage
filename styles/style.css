@@ -82,6 +82,11 @@ section {
   padding: 3rem 7rem 3rem 10rem;
 }
 
+#home {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .container {
   display: none;
 }
@@ -285,8 +290,7 @@ section {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  min-height: 80vh;
-  padding-top: 3rem;
+  height: 100%;
 }
 
 .home-container .left-home {
@@ -322,7 +326,7 @@ section {
 
 .home-container .right-home .image {
   border-radius: 50px;
-  height: 90%;
+  height: auto;
   width: 70%;
 }
 
@@ -781,10 +785,6 @@ section {
   .section-title {
     margin-left: 22rem;
   }
-  .home-container .right-home .image {
-    height: 80%;
-    width: 60%;
-  }
   .about-container .right-about .skills-wrapper .skill-item {
     height: 250px;
   }
@@ -810,14 +810,8 @@ section {
 }
 
 @media screen and (max-width: 1200px) {
-  .background-shape-0 {
-    display: none;
-  }
   .section-title {
     margin-left: 2rem;
-  }
-  .home-container .left-home {
-    padding-top: 2rem;
   }
   .about-container .left-about {
     padding-right: 2rem;
@@ -850,8 +844,14 @@ section {
 }
 
 @media screen and (max-width: 1023px) {
+  .background-shape-0 {
+    display: none;
+  }
   .background-shape-1 {
     display: none;
+  }
+  #home {
+    overflow: auto;
   }
   .section-title {
     text-align: center;
@@ -864,6 +864,10 @@ section {
   }
   .home-container .left-home {
     padding-top: 0;
+    margin-bottom: 1rem;
+  }
+  .home-container .right-home .image img {
+    pointer-events: none;
   }
   .about-container {
     -ms-grid-columns: 1fr;

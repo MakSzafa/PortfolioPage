@@ -79,6 +79,10 @@ section {
   width: 100%;
   padding: 3rem 7rem 3rem 10rem;
 }
+#home {
+  height: 100vh;
+  overflow: hidden;
+}
 
 .container {
   display: none;
@@ -225,8 +229,7 @@ section {
 .home-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 80vh;
-  padding-top: 3rem;
+  height: 100%;
   .left-home {
     padding-top: 7rem;
     padding-right: 7rem;
@@ -249,7 +252,7 @@ section {
     align-items: center;
     .image {
       border-radius: 50px;
-      height: 90%;
+      height: auto;
       width: 70%;
       img {
         border-radius: 50px;
