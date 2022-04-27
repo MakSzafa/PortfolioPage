@@ -83,7 +83,11 @@ section {
 }
 
 #home {
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -447,6 +451,7 @@ section {
           transform: scale(0);
   -webkit-transition: var(--transition-1);
   transition: var(--transition-1);
+  pointer-events: none;
 }
 
 .about-container .right-about .skills-wrapper .skill-item:hover {
@@ -537,6 +542,8 @@ section {
   margin-top: 2rem;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-container .project-item .project-logo .project-logo-container {
@@ -561,6 +568,7 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+  pointer-events: none;
 }
 
 .portfolio-container .project-item .project-logo .project-logo-container .project-logo-back {
@@ -778,6 +786,33 @@ section {
   max-width: 200px;
 }
 
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.error i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+  :root {
+    zoom: 0.8;
+  }
+  .home-container .right-home .image {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   body {
     font-size: 1.5rem;
@@ -785,12 +820,37 @@ section {
   .section-title {
     margin-left: 22rem;
   }
+  .section-subtitle {
+    font-size: 2.5rem;
+  }
+  .nav-buttons {
+    top: 5%;
+  }
+  .nav-buttons .lang-button {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .home-container .left-home {
+    padding-left: 5rem;
+  }
+  .home-container .left-home h1 {
+    font-size: 3.5rem;
+  }
+  .home-container .left-home p {
+    font-size: 1.7rem;
+  }
+  .home-container .right-home .image {
+    width: 60%;
+  }
   .about-container .right-about .skills-wrapper .skill-item {
     height: 250px;
   }
   .portfolio-container .project-item .project-logo {
     margin-right: auto;
     margin-left: auto;
+  }
+  .contact-container {
+    padding-top: 7rem;
   }
   .contact-container .left-contact {
     padding-left: 7rem;
@@ -867,7 +927,6 @@ section {
   }
   .home-container .left-home {
     padding-top: 0;
-    margin-bottom: 1rem;
   }
   .home-container .right-home .image img {
     pointer-events: none;
@@ -896,7 +955,7 @@ section {
   .portfolio-container .project-item .project-logo {
     width: 200px;
     height: 200px;
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   .portfolio-container .project-item .project-description .project-title {
     margin-bottom: 1rem;
@@ -960,7 +1019,7 @@ section {
   .portfolio-container .project-item .project-logo {
     -ms-grid-row: 2;
     grid-row: 2;
-    margin: 1rem auto 0 auto;
+    margin-top: 1rem;
   }
   .contact-container .left-contact {
     padding-top: 3rem;
@@ -977,7 +1036,7 @@ section {
   }
   .home-container .right-home .image {
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
   }
   .home-container .right-home .image img {
     border-radius: 20px;
