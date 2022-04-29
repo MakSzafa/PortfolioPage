@@ -801,6 +801,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  padding: 3rem;
+  text-align: center;
 }
 
 .info i {

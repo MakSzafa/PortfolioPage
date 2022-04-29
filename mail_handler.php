@@ -1,5 +1,7 @@
 <?php 
 if(isset($_POST['submit'])){
+    header('Location:error404.html');
+
     $to = "kontakt@makszafa.pl";
     $from = $_POST['mail'];
     $name = $_POST['name'];
