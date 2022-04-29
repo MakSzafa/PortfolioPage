@@ -4,15 +4,19 @@ if(isset($_POST['submit'])){
     $from = $_POST['mail'];
     $name = $_POST['name'];
     $subject = $_POST['subject'];
-    $message = "hejka to ja:" . $name . "\n\n a to moja wiadomosc:" . $_POST['message'];
+    $message = "Mail od: " . $name . "\n\nTreść wiadomości: " . $_POST['message'];
     $headers = "From:" . $from;
 
     $retval = mail($to,$subject,$message,$headers);
 
     if( $retval == true ) {
-        echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+        header('Location:email_sent.html');
+        sleep(5);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
      }else {
-        echo "Message could not be sent...";
+        header('Location:email_error.html');
+        sleep(5);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
      }
     }
 ?>

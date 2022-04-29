@@ -786,10 +786,14 @@ section {
   max-width: 200px;
 }
 
-.error {
+.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -799,9 +803,18 @@ section {
   min-height: 100vh;
 }
 
-.error i {
-  font-size: 3rem;
-  margin-right: 1rem;
+.info i {
+  font-size: 7rem;
+  margin-bottom: 1rem;
+}
+
+.info h1 {
+  margin-bottom: 1rem;
+}
+
+.info h2 {
+  font-style: italic;
+  font-weight: 500;
 }
 
 @media (-webkit-device-pixel-ratio: 1.25) {
