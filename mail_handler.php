@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $message = "Mail od: " . $name . "\n\nTreść wiadomości: " . $_POST['message'];
-    $headers = "Content-Type: text/html; charset=UTF-8 \r\n";
+    $headers = "Content-Type: text/plain; charset=UTF-8 \r\n";
     $headers = "From:" . $from;
 
     $retval = mail($to,$subject,$message,$headers);
