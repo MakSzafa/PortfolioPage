@@ -5,6 +5,12 @@
 }
 
 :root {
+  --box-shadow-1: 0 4px 1rem #000;
+  --transition-1: all 0.4s ease-in-out;
+  --transition-2: all 0.8s ease-out;
+}
+
+.dark-mode {
   --color-primary: #262626;
   --color-secondary: #368add;
   --color-white: #ffffff;
@@ -14,9 +20,6 @@
   --color-grey-2: #757575;
   --color-grey-3: #454545;
   --color-grey-4: #242424;
-  --box-shadow-1: 0 4px 1rem #000;
-  --transition-1: all 0.4s ease-in-out;
-  --transition-2: all 0.8s ease-out;
 }
 
 .light-mode {
